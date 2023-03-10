@@ -51,7 +51,7 @@
         </div>
         <div class="mb-3">
             <label asp-for="Product.ImageUrl"></label>
-            <input type="file" id="uploadBox" class="form-control" />
+            <input type="file" id="uploadBox" name="file" class="form-control" />
         </div>
         <div class="mb-3 col-6">
             <label asp-for="Product.CategoryId"></label>
@@ -74,7 +74,7 @@
 
             } else
             {
-                <button type="submit" onclick="return ValidateInput()" class="btn btn-primary" style="width:150px">Create</button>
+                <button type="submit" onclick="return ValidateInput" class="btn btn-primary" style="width:150px">Create</button>
 
             }
             <a asp-controller="CoverType" asp-action="Index" class="btn btn-secondary" style="width:150px">
