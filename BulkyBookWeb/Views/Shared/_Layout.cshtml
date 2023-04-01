@@ -24,7 +24,6 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarColor02">
       <ul class="navbar-nav me-auto">
-        <li class="nav-item">
         <li class="nav-item">  
             <a class="nav-link " asp-area="" asp-controller="Home" asp-action="Index">Home</a>
         </li>
@@ -37,6 +36,11 @@
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" asp-area="Admin" asp-controller="Company" asp-action="Index">Company</a>
           </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" asp-area="Customer" asp-controller="Cart" asp-action="Index">
+                <i class="bi bi-cart"></i> Cart
+            </a>
         </li>
       </ul>
       <partial name="_LoginPartial" />
