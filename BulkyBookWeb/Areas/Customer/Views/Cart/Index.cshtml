@@ -145,7 +145,7 @@
                         <div class="col-lg-4 col-xl-3">
                             <div class="d-flex justify-content-between" style="font-weight: 500;">
                                 <p class="mb-2">Subtotal</p>
-                                <p class="mb-2">@Model.CartTotal.ToString("c")</p>
+                                <p class="mb-2">@Model.OrderHeader.OrderTotal.ToString("c")</p>
                             </div>
 
 
@@ -153,15 +153,15 @@
 
                             <div class="d-flex justify-content-between mb-4" style="font-weight: 500;">
                                 <p class="mb-2">Total (tax included)</p>
-                                    <p class="mb-2">@Model.CartTotal.ToString("c")</p>
+                                    <p class="mb-2">@Model.OrderHeader.OrderTotal.ToString("c")</p>
                             </div>
 
-                            <button type="button" class="btn btn-primary btn-block btn-lg">
+                                    <a asp-action="Summary" class="btn btn-success form-control">
                                 <div class="d-flex justify-content-between">
                                     <span>Checkout</span>
-                                        <span>@Model.CartTotal.ToString("c")</span>
+                                        <span>@Model.OrderHeader.OrderTotal.ToString("c")</span>
                                 </div>
-                            </button>
+                                    </a>
 
                         </div>
                     </div>
